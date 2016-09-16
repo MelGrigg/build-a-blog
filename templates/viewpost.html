@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% set pageTitle = post.title %}
+
+{% block content %}
+    <h1><a href="/blog/{{ post.key().id() }}">{{ post.title }}</a></h1>
+    <p>{{ post.body }}</p>
+{% endblock %}
